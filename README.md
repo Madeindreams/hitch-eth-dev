@@ -310,3 +310,69 @@ https://docs.soliditylang.org/en/v0.7.5/
 
 - **MySQL**, https://dev.mysql.com/
 
+### CSS
+
+- CSS, https://www.w3schools.com/css/default.asp
+
+CSS stand for Cascading Style Sheets. The extension of the files is .css. This markup will alow you to customize html elements in your documents. 
+
+You can use inline css styling (not recommended)
+
+```html
+ <span style="color:#000000;"> the black text </span>
+```
+
+A better appraoch, is to store all your CSS in one place 
+
+myStyle.css
+
+```css
+body {
+    background-color:#ffffff;
+    /* This css will apply to the html element body */
+}
+
+.myClass {
+    color:#000000;
+     /* This css will apply to the html element with class attribute "myClass" */
+}
+
+.#element {
+    border: 1px solid #cccccc;
+     /* This css will apply to the html element with id attribute "element" */
+}
+
+ ```
+
+ Now if we use the previous `<span>` element and apply all the style to it like this.
+
+
+```html 
+
+
+<span id = "element"> This span will have a border</span>
+
+<span class = "myClass"> This text will be black </span>
+
+```
+
+In order for your html document to apply the style you will need to import your CSS files.
+Our React app is loading from the index.html file. We could link a CSS file by adding the following line int the head of ourhtml document.
+
+```html 
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+```
+
+However in this case since we use React we will import the CSS for our components with the import statement in the index.js default component.
+
+```javascript 
+
+import './index.css';
+
+```
+
+
+- [CSS Color picker](https://www.google.com/search?q=css+color+picker&oq=css+color+picker&aqs=chrome..69i57.3167j0j4&sourceid=chrome&ie=UTF-8)
