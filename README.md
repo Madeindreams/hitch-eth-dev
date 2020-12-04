@@ -319,7 +319,7 @@ CSS stand for Cascading Style Sheets. The extension of the files is .css. This m
 You can use inline css styling (not recommended)
 
 ```html
- <span style="color:#000000;"> the black text </span>
+ <h1 style="color:#000000;"> the black text </h1>
 ```
 
 A better appraoch, is to store all your CSS in one place 
@@ -327,13 +327,15 @@ A better appraoch, is to store all your CSS in one place
 index.css
 
 ```css
+/* This is how you comment css */
+/* This css will apply to the body element */
 body {
     background-color: #282c34;
-    /* This css will apply to the html element body */
 }
 
-header {
 
+/* This css will apply to the header HTML5 element*/
+header {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -343,11 +345,22 @@ header {
   padding:10px;
 }
 
-
 /* All paragraph will be justified */
 p {
   text-align: justify;
 }
+
+/* Classes are represented with a . in front of the name */
+.title{
+  color:#4e535c;
+}
+
+
+/* Element id are represented with a # in front of the name */
+#my-h2-id{
+    text-decoration: underline;
+}
+
 
  ```
 
@@ -355,12 +368,13 @@ p {
 
 
 ```html 
+<header>
+<h1 class= "title"> A Hitchhicker's Guide to Ethereum Development </h1>
 
+<p> justified parapgraph ... </p>
 
-<span id = "element"> This span will have a border</span>
-
-<span class = "myClass"> This text will be black </span>
-
+<h2 id = "my-h2-id"> ERC What?</h2>
+</header>
 ```
 
 In order for your html document to apply the style you will need to import your CSS files.

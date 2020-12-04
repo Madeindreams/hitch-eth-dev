@@ -7,7 +7,7 @@ function App() {
         <p>
           So, you want to learn solidity and dive into the smart contract world, but you are not sure where to start? Well you are at the right place at the right time. I have decided it is time to have a comprehensive guide to introduce all the newcomers to this thriving blockchain trend. Wheater you are here to create an ERC20 token, some NFTs or even an amitious project such as a DEX or a hot DEFI opportunirty. This is where it all start. And if you do not understand all these new terms, well, keep reading.
         </p>
-       <h2>ERC what?</h2>
+       <h2 id="my-id">ERC what?</h2>
        <p>
          To make it simple, the Ethereum network runs a big virtual machine where you can store contract and information on thje blockchain. The Ethereum Virtual Machine. And there are certain standards for everyone to understand eachothers. ERC stand for Ethereum Request for Comment and 20 is the proposal.
        </p>

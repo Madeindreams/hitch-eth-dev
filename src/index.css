@@ -8,13 +8,8 @@ body {
   background-color: #000000;
 }
 
-.title{
-
-  color:#4e535c;
-}
 
 header {
-
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -26,4 +21,12 @@ header {
 
 p{
   text-align: justify;
+}
+
+.title{
+  color:#4e535c;
+}
+
+#my-h2-id{
+  text-decoration: underline;
 }
