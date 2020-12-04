@@ -32,6 +32,7 @@ This will also prevent some error if you have previous version on your system.
 - [MYSQL](#MYSQL) 
 - [FTP](#FTP) 
 - [IPFS](#IPFS) 
+- [ENS](#ENS) 
 - [CSS](#CSS) 
 - [GETH](#GETH) 
 - [TESTNET](#TESTNET) 
@@ -178,13 +179,17 @@ To make some cool apps we will use react. To install it type the command;
 
  ``` npm install --save-dev  -g create-react-app ```
 
-### MATAMASK
+### METAMASK
 
 - MetaMask, https://metamask.io/
+
+Metamask is an Ethereum Wallet integrated to a desktop browser as an extention or a Mobile app on Mobile Device.
 
 ### INFURA
 
 - Infura, https://infura.io/
+
+Infura offers a free Ethereum Node connection services. We can use it to deploy our contract
 
 
 ### REDUX
