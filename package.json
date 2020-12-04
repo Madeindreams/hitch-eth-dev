@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Hitchicker's Guide to Ethereum Development",
   "author": "Ian Dorion",
-  "homepage": "https://github.com/Madeindreams/hitch-eth-dev",
+  "homepage": "https://madeindreams.github.io/hitch-eth-dev",
   "private": true,
   "dependencies": {
     "@openzeppelin/contracts": "^3.3.0",
@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
