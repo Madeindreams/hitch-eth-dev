@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Token is ERC20, Ownable {
 
-    constructor() public ERC20("Hitchicker's Ethereum Guide Token", "HEGT") {
+    constructor() public ERC20("Hitchicker's Guide to Ethereum Development Token", "HGEDT") {
         uint256 initialSupply = 1000000000000000000000;
         _mint(msg.sender, initialSupply);
     }

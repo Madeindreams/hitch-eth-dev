@@ -221,9 +221,57 @@ We are interested in the first private key;
 
 In metamask select the network and select the custom PRC option.
 
-Add the Ganache cli RPC. or select localhost 8545. To view or change the Ganache connection setting you can veie the truffle-config.js file.
+Add the Ganache cli RPC. or select localhost 8545. To view or change the Ganache connection setting you can view the truffle-config.js file.
 
 Once you are conected to the right network import the wallet by providing the private key from ganache-cli.
 Remove the leading 0x and paste the rest in. You should have just under 100 ETH on this account since we spent some when we deployed the Token.sol.
 
 
+Now it's time to launch the app. in the terminal, under your project directory, type 
+
+``` npm start ```
+
+This will start your app and the browser should display automatically the application.
+
+NOTE: You should work from the files in your linux file system and not the windows one.
+
+If your path looks like;
+
+> /mnt/d/code
+
+You are on a windows mounted linux partitions.
+
+> /code/
+
+You are in a linux system.
+
+From your windows desktop you can access you linux filesystem here;
+
+>\\wsl$\homw\user\code\
+
+## Visual Studio Code
+
+To help you with language markup you can add extension to VSC
+
+You should add the fllowing extensions
+
+- solidity by Juan Blanco
+- env
+
+You are alsmot ready to start coding.
+
+Visual studio will often warn you about coding error. If you see visual studio complaining about the solidity version. In a .sol file. Right click the document and select change solidity version.
+
+You should select the one declared in the first line of your contract .sol file.
+
+> pragma solidity 0.6.2;
+
+Note that this version has to match the one in truffle-config.js as well.
+
+To read more about Solidity version;
+
+https://docs.soliditylang.org/en/v0.7.5/
+
+
+
+# To be continued...
