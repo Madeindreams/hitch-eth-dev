@@ -17,26 +17,24 @@ This will also prevent some error if you have previous version on your system.
 ## Table of Contents
 
 - [WSL](#WSL)
-
 - [NODEJS](#NODEJS)
-
 - [NPM](#NPM)
 - [PYTHON2](#PYTHON2)
-- [NODE-GYP](###NODE-GYP)
-- [GIT](###GIT) 
-- [GANACHE-CLI](###GANACHE-CLI) 
-- [TRUFFLE](###TRUFFLE) 
-- [REACT](###REACT) 
-- [ANGULAR](###ANGULAR) 
-- [METAMASK](###METAMASK) 
-- [INFURA](###INFURA) 
-- [REDUX](###REDUX) 
-- [MYSQL](###MYSQL) 
-- [FTP](###FTP) 
-- [IPFS](###IPFS) 
-- [CSS](###CSS) 
-- [GETH](###GETH) 
-- [TESTNET](###TESTNET) 
+- [NODE-GYP](#NODE-GYP)
+- [GIT](#GIT) 
+- [GANACHE-CLI](#GANACHE-CLI) 
+- [TRUFFLE](#TRUFFLE) 
+- [REACT](#REACT) 
+- [ANGULAR](#ANGULAR) 
+- [METAMASK](#METAMASK) 
+- [INFURA](#INFURA) 
+- [REDUX](#REDUX) 
+- [MYSQL](#MYSQL) 
+- [FTP](#FTP) 
+- [IPFS](#IPFS) 
+- [CSS](#CSS) 
+- [GETH](#GETH) 
+- [TESTNET](#TESTNET) 
 
 
 
