@@ -324,22 +324,29 @@ You can use inline css styling (not recommended)
 
 A better appraoch, is to store all your CSS in one place 
 
-myStyle.css
+index.css
 
 ```css
 body {
-    background-color:#ffffff;
+    background-color: #282c34;
     /* This css will apply to the html element body */
 }
 
-.myClass {
-    color:#000000;
-     /* This css will apply to the html element with class attribute "myClass" */
+header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  margin: 10px;
+  padding:10px;
 }
 
-.#element {
-    border: 1px solid #cccccc;
-     /* This css will apply to the html element with id attribute "element" */
+
+/* All paragraph will be justified */
+p {
+  text-align: justify;
 }
 
  ```
