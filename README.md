@@ -166,5 +166,64 @@ To make some cool apps we will use react. To install it type the command;
 
 ## Your Environment is ready, What now?
 
+Let's create our first react app. First let's pick a folder to savoe our work. In my case i will use the folder code.
 
-Comming soon...
+``` cd code ```
+
+Now you will clone this repository.
+
+in the terminal type;
+
+``` git clone https://github.com/Madeindreams/hitch-eth-dev.git```
+
+
+``` cd hitch-eth-dev ```
+
+You will now be inside the project folder. you can type in the command 
+
+``` code . ```
+
+This will launch VSC in you project folder.
+
+Take a look at the package.json file. It containe all the rest of the dependecies we need to develop outr app. To install all the package listed type in;
+
+``` npm install ```
+
+This will installed all the required package to start the development of your Dapp.
+
+Now it's time to initiate the truffle project. IF you did not clone the repo ans are starting from scratch.
+
+``` truffle init```
+
+
+Start Ganache with the following command
+
+``` ganache-cli --networkId 4777 ```
+
+We specify the network id that should match the network is in truffle-config.js
+
+
+Run the command 
+
+``` truffle migrate ```
+
+This will deploy your contract on your local blockchain. Yes i know you this is gong fast. Let take a moment to observer what we did, If you cloned the this repository. Then you have a contract called Token.sol in the src/contracts folder. This is an ERC20 contract that is using openZepplein contract. Why use some openZeppelin contract. Symply because we just bumped our nove contract to a higher standard security. OpenZepplelin ar auditing smart contract. So by using there we kinda audit our contract to a minimum.
+
+To learn more about openZeppelin;
+
+https://openzeppelin.com/
+
+Yes you now have an ERC20 token that is deployed on your local blockchain. Let's connect your metamask wallet to thatr local blockchain. To do so, come back to the terminal where you started Ganache-cli. It printed out some adresses an private Key.
+
+We are interested in the first private key;
+
+> 0xceb161fb15db566c685c127e6f9efa2b4285f11633a837ec5767e5ec6249a3c6
+
+In metamask select the network and select the custom PRC option.
+
+Add the Ganache cli RPC. or select localhost 8545. To view or change the Ganache connection setting you can veie the truffle-config.js file.
+
+Once you are conected to the right network import the wallet by providing the private key from ganache-cli.
+Remove the leading 0x and paste the rest in. You should have just under 100 ETH on this account since we spent some when we deployed the Token.sol.
+
+
