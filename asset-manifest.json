@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Madeindreams/hitch-eth-dev/static/css/main.f3b22803.chunk.css",
+    "main.js": "/Madeindreams/hitch-eth-dev/static/js/main.005f8d39.chunk.js",
+    "main.js.map": "/Madeindreams/hitch-eth-dev/static/js/main.005f8d39.chunk.js.map",
+    "runtime-main.js": "/Madeindreams/hitch-eth-dev/static/js/runtime-main.72720b05.js",
+    "runtime-main.js.map": "/Madeindreams/hitch-eth-dev/static/js/runtime-main.72720b05.js.map",
+    "static/js/2.478b7ea7.chunk.js": "/Madeindreams/hitch-eth-dev/static/js/2.478b7ea7.chunk.js",
+    "static/js/2.478b7ea7.chunk.js.map": "/Madeindreams/hitch-eth-dev/static/js/2.478b7ea7.chunk.js.map",
+    "index.html": "/Madeindreams/hitch-eth-dev/index.html",
+    "static/css/main.f3b22803.chunk.css.map": "/Madeindreams/hitch-eth-dev/static/css/main.f3b22803.chunk.css.map",
+    "static/js/2.478b7ea7.chunk.js.LICENSE.txt": "/Madeindreams/hitch-eth-dev/static/js/2.478b7ea7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72720b05.js",
+    "static/js/2.478b7ea7.chunk.js",
+    "static/css/main.f3b22803.chunk.css",
+    "static/js/main.005f8d39.chunk.js"
+  ]
+}
