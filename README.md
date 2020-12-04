@@ -1,8 +1,7 @@
 # A Hitchhiker's Guide to Ethereum Development
 
 So, you want to learn solidity and dive into the smart contract world, but you are not sure where to start?
-Well you are at the right place at the right time. I have decided it is time to have a comprehensive guide the
-introduce all the newcomers to this thriving blockchain trend. Wheater you are here to create an ERC20 token, some NFTs or even an amitious project such as a DEX or a hot DEFI opportunirty. This is where it all start. And if you do not understand all these new terms, well, keep reading.
+Well you are at the right place at the right time. I have decided it is time to have a comprehensive guide to introduce all the newcomers to this thriving blockchain trend. Wheater you are here to create an ERC20 token, some NFTs or even an amitious project such as a DEX or a hot DEFI opportunirty. This is where it all start. And if you do not understand all these new terms, well, keep reading.
 
 ## ERC what?
 
@@ -15,21 +14,36 @@ This will also prevent some error if you have previous version on your system.
 
 
 
-## Dependencies installation
+## Table of Contents
 
-- WSL
-- UBUNTU
-- NVM & NodeJS
-- Python2
-- Git
-- ganachge
-- Truffle
-- React
-- Mysql
+- [WSL](###WSL)
+- [NODEJS](###NODEJS)
+- [NPM](###NPM)
+- [PYTHON2](###PYTHON2)
+- [NODE-GYP](###NODE-GYP)
+- [GIT](###GIT) 
+- [GANACHE-CLI](###GANACHE-CLI) 
+- [TRUFFLE](###TRUFFLE) 
+- [REACT](###REACT) 
+- [ANGULAR](###ANGULAR) 
+- [METAMASK](###METAMASK) 
+- [INFURA](###INFURA) 
+- [REDUX](###REDUX) 
+- [MYSQL](###MYSQL) 
+- [FTP](###FTP) 
+- [IPFS](###IPFS) 
+- [CSS](###CSS) 
+- [GETH](###GETH) 
+- [TESTNET](###TESTNET) 
 
-### WSL  Windows SubSystem Linux
 
-Since most development preferably done under linux, We want a linux sys on our windows machine. To achieve that wi will follows the microsoft documentation. Make sure to bookmark this because it will become a good reference for our environement setup.
+
+
+### WSL
+
+You should update your version of Windows to 
+
+Since most development is preferably done under linux, we want a linux system on our windows machine. To achieve that, we will follow the Microsoft documentation. Make sure to bookmark this because it will become a good reference for our environement setup. You will not need to touch your partitions or mess up your master boot record to have **Windows Subsystem Linux**
 
 https://docs.microsoft.com/en-us/windows/dev-environment/overview
 
@@ -39,7 +53,14 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 Once completed you should be able to run a linux terminal under windows.
 
-### Node JS and NVM
+- install the WSL Environement
+- Install Ubuntu from Microsoft Store
+- Install Telrminal
+
+:collision: You can play with the new terminal setings to change colors and background.
+
+
+### NODEJS
 
 We will need NodeJS and nvm. Nvm let us manage which version of NodeJS we want to run. Start a linux ubuntu terminal and type the folowwing command;
 
@@ -57,6 +78,8 @@ To test you installation type in;
 
 ``` node -v```
 
+> 
+
 If sucessfull, you should see the version of node running
 
 https://docs.microsoft.com/en-us/windows/nodejs/
@@ -72,7 +95,7 @@ To change version currently in use;
 
 will switch to the specified version.
 
-```nvm install 9.10.0```
+```nvm install 10.17.0```
 
 will install the specified version
 
@@ -155,16 +178,25 @@ To make some cool apps we will use react. To install it type the command;
 
  ``` npm install --save-dev  -g create-react-app ```
 
-## Other tools you will need
+### MATAMASK
 
-- Browser, https://brave.com/fr/
 - MetaMask, https://metamask.io/
-- Redux Devtools, https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
-- Visual Studio Code, https://code.visualstudio.com/docs
+
+### INFURA
+
 - Infura, https://infura.io/
 
 
-## Your Environment is ready, What now?
+### REDUX
+
+- Redux Devtools, https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+
+
+
+
+
+
 
 Let's create our first react app. First let's pick a folder to savoe our work. In my case i will use the folder code.
 
@@ -185,11 +217,18 @@ You will now be inside the project folder. you can type in the command
 
 This will launch VSC in you project folder.
 
-Take a look at the package.json file. It containe all the rest of the dependecies we need to develop outr app. To install all the package listed type in;
+Take a look at the package.json file. It contains all the rest of the dependecies we need to develop our app. To install all the package listed type in termina, in project folder;
 
 ``` npm install ```
 
-This will installed all the required package to start the development of your Dapp.
+This will installed all the required package to start the development of your Dapp that are listed in package.json.
+
+Here is a few of them;
+
+- **web3**,  https://www.npmjs.com/package/web3
+
+- **@openzeppelin/contracts**, https://www.npmjs.com/package/@openzeppelin/contracts
+
 
 Now it's time to initiate the truffle project. IF you did not clone the repo ans are starting from scratch.
 
@@ -249,7 +288,9 @@ From your windows desktop you can access you linux filesystem here;
 
 >\\wsl$\homw\user\code\
 
-## Visual Studio Code
+### Visual Studio Code
+
+- **Visual Studio Code**, https://code.visualstudio.com/docs
 
 To help you with language markup you can add extension to VSC
 
@@ -274,4 +315,6 @@ https://docs.soliditylang.org/en/v0.7.5/
 
 
 
-# To be continued...
+### MYSQL
+
+- **MySQL**, https://dev.mysql.com/
