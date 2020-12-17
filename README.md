@@ -58,6 +58,18 @@ Once completed you should be able to run a linux terminal under windows.
 
 :collision: You can play with the new terminal setings to change colors and background.
 
+
+When working with WSL. The terminal will strat in a mounted windows folder. Working from the windows file system will cause performance and access permission issue. To avoid that you should alway work within the linux file system. So start a ubuntu terminal and type 
+
+```cd```
+
+```mkdir code```
+
+```cd code```
+
+You are now in the code folder, on the linux file system. this is where all your project will be saved. This is also the folder you want to be in when cloning from github. Clone repos will automatically create a folder name after the project name.
+
+
 ### NODEJS
 
 We will need NodeJS and nvm. Nvm let us manage which version of NodeJS we want to run. Start a linux ubuntu terminal and type the folowwing command;
@@ -74,8 +86,7 @@ You have just installed NodeJS version 12.19.0. To find out more about NodeJS vi
 To test your installation type in;
 
 ``` node -v```
-
-> 
+ 
 
 If sucessfull, you should see the version of node running
 
@@ -102,6 +113,23 @@ With node came NPM Node Package Manager, a tool to let you add package to your p
 
 ``` npm -v ```
 
+When starting a new project, you can use this coomand to create the package.json file that wil contain all the dependencies required for your project.
+
+```npm init```
+
+You can press enter when prompted to keep the default value.
+Everytime you will add a npm package to your project with the ```npm install a-package-name``` command, it will insert this package in the package.json file. This way, anyone that use your project can just type ```npm install``` and npm will install everything that is listed in your package.json
+
+When installing a package you might see warnings like what some package are deprecated, this wont prevent your project to work. 
+
+You might also see some vulnerabilitys, You should investigate them to be aware of the risk they represent.
+
+You sould install all the package for your project under the same node version. Often, when you will open a terminal, nvm will use the latest node version. For this project we will use 10.17.0. So before you install any package make sure you are under the right node version as it might cause errors.
+
+You can find more about npm here
+
+https://www.npmjs.com/
+
 ### PYTHON2
 
 We will need to install python2. To find out more about python you can visit.
@@ -125,7 +153,8 @@ Now will install a node package called node-gyp, to learn more about it visit.
 
 https://www.npmjs.com/package/node-gyp
 
-To install a node package, we use npm. To install a package globaly we use the flag -g or --global
+To install a node package, we use npm. To install a package globaly we use the flag ```-g``` or ```--global```
+
 This command will install the node package node-gy globally.
 
 ``` npm install --save-dev -g node-gy ```
@@ -134,7 +163,7 @@ Verify the installation with the command
 
 ``` noge-gyp -v ```
 
-Note: package.json files are node packages information. When cloning a git repo to your computer you generally ```run npm install``` to install all de dependencies for the project.
+Note: package.json files are node packages informations. When cloning a git repo to your computer you generally ```run npm install``` to install all de dependencies for the project.
 
 ### GANACHE-CLI
 
@@ -152,6 +181,8 @@ We will also install Ganache globally with the command.
 ``` npm install --save-dev -g truffle@latest ```
 
 This take care of our local blockchain.
+
+We use the command line version since we are working from a linux terminal. We will also use ganache-cli to fork the main network later on.
 
 ### GIT
 
@@ -183,15 +214,11 @@ Metamask is an Ethereum Wallet integrated to a desktop browser as an extention o
 
 - Infura, https://infura.io/
 
-Infura offers a free Ethereum Node connection services. We can use it to deploy our contract
+Infura offers a free Ethereum Node connection service. We can use it to deploy our contract or query the ethereum network. You will need to create an account to obtain an KEY.
 
 ### REDUX
 
 - Redux Devtools, https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
-
-
-
-
 
 
 
@@ -279,6 +306,11 @@ You are in a Linux system.
 From your windows desktop you can access you linux filesystem here;
 
 > \\\wsl$\home\user\code\
+
+user should be your username under linux. It's usualy what you see in the linux promt
+
+```username@yourPc:```
+
 
 ### Visual Studio Code
 
