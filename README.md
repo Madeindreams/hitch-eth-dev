@@ -397,3 +397,57 @@ import './index.css';
 
 
 - [CSS Color picker](https://www.google.com/search?q=css+color+picker&oq=css+color+picker&aqs=chrome..69i57.3167j0j4&sourceid=chrome&ie=UTF-8)
+
+
+
+
+### GETH
+
+To work with the Ethereum environment you will need acces to the Ethereum network. There are a few way to do it depending on your project,
+
+
+Web3 is a npm package that will let your app intereact with the network. But it need a provider. A provider is an acces point to a node.
+
+In a react app we could use metamask as a provider. It will be directly injected in your app.
+
+We could also use a public node like Infura. You can request an access to the node for your app. This is a very common way.
+
+But you could also install a Go Ethereum node (GETH). A real node that you can use to send transactions, deploy contract, and test your applications. However, you will need very good read and write access speed. At the time of writing, the blockchain size is about 277 GB and you will require a Nvme Drive to keep up with synchronization.
+
+Not only that but it will take anywhere between 18 to 48+ hours to sync your node.
+
+You might ask yourself why give yourself all this trouble. First it will give you an edge, Instead of using a public service where a lot of transaction get sent. You have direct acces to the network. It will also be usefull to test complex operation with other contract on the main network that might not have been all deployed to the same testnet. Forking a node with ganache-cli over Infura is not very stable and you will most likely have to reconnect to it often. This can be challenging. 
+
+So if you choose to install a Geth node you can follow these step.
+
+The instllation documentation
+
+https://geth.ethereum.org/docs/install-and-build/installing-geth#install-on-ubuntu-via-ppas
+
+
+I strongly suggest that you follow the step for the Ubuntu installation since our environement is based on it. Head to your Ubuntu terminal and type:
+
+```sudo add-apt-repository -y ppa:ethereum/ethereum```
+
+```sudo apt-get update```
+
+```sudo apt-get install ethereum```
+
+Once installed type in the command to start geth;
+
+
+```geth --rpc --rpcapi "personal,eth,web3,net" --ipcpath "geth.ipc" --rpccorsdomain * ``` 
+
+Your node will start, It might take a while before it finds some peers to connect to and start downloading the blockchain. It will download for a while.
+
+To see the status of the syncronization, you can open a new terminal and type ;
+
+ ```geth attach``` 
+
+ It will strat a geth console, enter the comand;
+
+ ```eth.syncing```
+
+ This will show you the status of your node. If the output is false, it mean that you are cync to the main net. 
+
+ **Always use CTRL-C to close the geth console process !**
